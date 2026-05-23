@@ -1,0 +1,102 @@
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.auth-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  color: #fff;
+}
+
+.auth-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.auth-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.auth-input:focus {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.auth-btn {
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  color: #111;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 10px;
+}
+
+.auth-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 201, 255, 0.4);
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.auth-link a {
+  color: #92FE9D;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+.auth-error {
+  background: rgba(255, 0, 0, 0.2);
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  color: #ffcccc;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+}
